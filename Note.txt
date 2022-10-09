@@ -14,3 +14,6 @@ Article.create // create mock Article
 Article.count // shows the number of article in the database
 Article.last.destroy // deletes the last article
 
+rspec spec/routing/articles_spec.rb
+
+rails g serializer article title content slug

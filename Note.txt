@@ -1,0 +1,16 @@
+rails new app -T --api
+
+gem 'rspec-rails'
+gem 'factory_bot_rails'
+
+rails g rspec:install
+rspec
+
+rails g model Article title content:text slug
+rails db:migrate
+
+rails c // console to add mock data
+Article.create // create mock Article
+Article.count // shows the number of article in the database
+Article.last.destroy // deletes the last article
+
